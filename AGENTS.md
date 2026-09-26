@@ -800,7 +800,7 @@ The objective is a convincing end-to-end working product.
 Build in this order:
 
 PHASE 1
-Backend + PostgreSQL setup
+Backend + MongoDB setup
 
 ↓
 
@@ -906,10 +906,9 @@ I am the backend developer.
 I already know basic:
 
 * JavaScript
-* TypeScript
 * Node.js
-* Fastify
-* PostgreSQL
+* Express
+* MongoDB
 * REST APIs
 * Git/GitHub
 * Controller/service/repository architecture
@@ -1096,7 +1095,7 @@ Service
    ↓
 Repository
    ↓
-PostgreSQL
+MongoDB
 ```
 
 The frontend should NEVER directly access PostgreSQL.

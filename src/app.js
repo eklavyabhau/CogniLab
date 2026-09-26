@@ -1,5 +1,6 @@
 ﻿import express from 'express';
 import cors from 'cors';
+import authRoutes from './auth/auth.routes.js';
 import errorHandler from './errors/errorHandler.js';
 
 const app = express();
@@ -14,6 +15,8 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+app.use('/auth', authRoutes);
 
 app.use(errorHandler);
 
