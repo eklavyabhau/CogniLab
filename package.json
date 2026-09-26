@@ -1,0 +1,28 @@
+{
+  "name": "cognilab",
+  "version": "1.0.0",
+  "description": "Develop a secure, flexible, and high-precision Software-as-a-Service (SaaS) platform that empowers researchers to build and deploy complex behavioral experiments directly in a web browser. The platform's mission is to democratize cognitive science research by providing an accessible, no-code/low-code solution that replicates the accuracy of labbased studies while enabling large-scale, diverse online data collection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptakrish490/CogniLab.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/guptakrish490/CogniLab/issues"
+  },
+  "homepage": "https://github.com/guptakrish490/CogniLab#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
