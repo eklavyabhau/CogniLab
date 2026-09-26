@@ -1,6 +1,7 @@
 ﻿import express from 'express';
 import cors from 'cors';
 import authRoutes from './auth/auth.routes.js';
+import experimentRoutes from './experiments/experiment.routes.js';
 import errorHandler from './errors/errorHandler.js';
 
 const app = express();
@@ -17,6 +18,7 @@ app.get('/api/health', (req, res) => {
 });
 
 app.use('/auth', authRoutes);
+app.use('/experiments', experimentRoutes);
 
 app.use(errorHandler);
 
