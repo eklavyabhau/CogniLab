@@ -4,6 +4,7 @@ import authRoutes from './auth/auth.routes.js';
 import experimentRoutes from './experiments/experiment.routes.js';
 import trialRoutes from './trials/trial.routes.js';
 import participantRoutes from './participants/participant.routes.js';
+import resultsRoutes from './results/results.routes.js';
 import errorHandler from './errors/errorHandler.js';
 
 const app = express();
@@ -22,6 +23,7 @@ app.get('/api/health', (req, res) => {
 app.use('/auth', authRoutes);
 app.use('/experiments', experimentRoutes);
 app.use('/experiments/:experimentId/trials', trialRoutes);
+app.use('/experiments/:experimentId/results', resultsRoutes);
 app.use('/sessions', participantRoutes);
 
 app.use(errorHandler);

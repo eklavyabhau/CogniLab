@@ -2,9 +2,10 @@
   "name": "cognilab",
   "version": "1.0.0",
   "description": "Develop a secure, flexible, and high-precision Software-as-a-Service (SaaS) platform that empowers researchers to build and deploy complex behavioral experiments directly in a web browser. The platform's mission is to democratize cognitive science research by providing an accessible, no-code/low-code solution that replicates the accuracy of labbased studies while enabling large-scale, diverse online data collection.",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
